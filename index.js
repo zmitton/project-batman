@@ -35,10 +35,13 @@ var sendTx = function(){
   if(document.getElementById("ethInput").value != "")
   web3.eth.getAccounts(function(e,r){
     if(r){
+      console.log(r)
       if(!r[0]){ 
         alert("please unlock an account to make a transaction");
       } else{
-        web3.eth.sendTransaction({from:r[0], to:address, value: document.getElementById("ethInput").value + "000000000000000000", gas: 100000})
+        web3.eth.sendTransaction({from:r[0], to:address, value: document.getElementById("ethInput").value + "000000000000000000", gas: 100000}, function(e,r){
+          console.log(e,r);
+        })
       }
     }else{
       console.log(e)
