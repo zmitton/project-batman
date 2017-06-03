@@ -90,6 +90,9 @@ class App extends Component {
             <p className="post-segment">Instantly Receive <span className="underline">BAT</span></p>
           </div>
 
+          <p className="disclaimer primary">Do <span className="underline">NOT</span> send transactions to the ATM from an exchange account or Coinbase</p>
+          <p className="disclaimer secondary">Send <span className="underline">75,000</span> gas with the transaction</p>
+
         </div>
 
         <a href="https://etherscan.io/address/0x67d0c6e07bde60f88e9f7775f366c223ce6a9160" target="_blank" className="view-on-etherscan">

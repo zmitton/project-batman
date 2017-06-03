@@ -104,6 +104,21 @@ a {
       font-size: 32px;
       font-weight: 700;
       color: white; }
+  .main-hero .disclaimer.primary {
+    margin-top: 50px;
+    font-family: "adam-cg-pro";
+    font-size: 18px;
+    font-weight: 700;
+    color: white; }
+    .main-hero .disclaimer.primary .alert {
+      background-color: #c8297e;
+      padding: 7.5px; }
+  .main-hero .disclaimer.secondary {
+    margin-top: 15px;
+    font-family: "adam-cg-pro";
+    font-size: 18px;
+    font-weight: 700;
+    color: white; }
 
 .view-on-etherscan {
   display: flex;
