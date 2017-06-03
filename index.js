@@ -13,7 +13,7 @@ window.onload = function(){
   BAT_ATM = web3.eth.contract(abi).at(address);
   pausedUntil = 0;
 
-  var getBatsPerEth = function(){
+  getBatsPerEth = function(){
     BAT_ATM.BATsPerEth.call(function(e,r){
       if(r){ 
         document.getElementById('batsPerEth').innerHTML = "BATsPerEth: " + r.toNumber();
@@ -23,7 +23,7 @@ window.onload = function(){
     })
   }
 
-  var getPausedUntil = function(){
+  getPausedUntil = function(){
     BAT_ATM.pausedUntil.call(function(e,r){
       if(r){ 
         pausedUntil = r.toNumber();
@@ -33,7 +33,7 @@ window.onload = function(){
     })
   }
 
-  var sendTx = function(){
+  sendTx = function(){
     if(document.getElementById("ethInput").value != "")
     web3.eth.getAccounts(function(e,r){
       if(r){
