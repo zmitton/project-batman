@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+.view-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: linear-gradient(90deg, #646464, #212121);
+  min-height: 800px; }
+
+.header {
+  height: 60px;
+  display: flex; }
+
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main-hero span.underline {
+    border-bottom: 3px solid #c8297e; }
+  .main-hero .batatm-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .main-hero .batatm-text-container p {
+      font-family: "adam-cg-pro";
+      font-weight: 700;
+      font-size: 48px; }
+      .main-hero .batatm-text-container p.basic {
+        color: white; }
+      .main-hero .batatm-text-container p.attention {
+        color: #ff4f00; }
+      .main-hero .batatm-text-container p.token {
+        color: white; }
+      .main-hero .batatm-text-container p.atm {
+        color: #c8297e;
+        margin-left: 25px;
+        font-size: 75px; }
+  .main-hero .batatm-address-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "adam-cg-pro";
+    font-size: 24px;
+    color: white; }
+    .main-hero .batatm-address-container .address {
+      margin-left: 10px;
+      margin-right: 10px;
+      color: white;
+      background-color: #ff4f00;
+      padding: 10px; }
+  .main-hero .main-content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch; }
+  .main-hero .batatm-container {
+    height: 350px;
+    position: relative; }
+  .main-hero img.batatm {
+    position: relative;
+    height: 100%;
+    z-index: 2; }
+  .main-hero .batatm-shadow {
+    background-color: black;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 3.35rem;
+    left: 1.75rem;
+    z-index: 1; }
+  .main-hero .batatm-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .main-hero .batatm-stat .stat-header {
+      font-family: "adam-cg-pro";
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      background-color: #672e91;
+      padding: 10px; }
+    .main-hero .batatm-stat .stat-data {
+      margin-top: 18px;
+      font-family: "adam-cg-pro";
+      font-size: 32px;
+      font-weight: 700;
+      color: white; }
+
+.view-on-etherscan {
+  display: flex;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: #ff4f00;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'adam-cg-pro';
+  src: url("./fontsdata/adam-cg-pro.woff2") format("woff2"), url("./fontsdata/adam-cg-pro.woff") format("woff"), url("./fontsdata/adam-cg-pro.ttf") format("truetype"); }
+
+/*# sourceMappingURL=App.css.map */

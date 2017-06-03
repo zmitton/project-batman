@@ -1,0 +1,170 @@
+// Colors
+$BAT_Orange: rgb(255, 79, 0);
+$BAT_Pink: lighten(rgb(158, 32, 99), 10%);
+$BAT_Purple: rgb(103, 46, 145);
+
+// Globals
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.view-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: linear-gradient(90deg, rgb(100, 100, 100), rgb(33, 33, 33));
+  min-height: 800px;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+}
+
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span.underline {
+    border-bottom: 3px solid $BAT_Pink;
+  }
+
+  .batatm-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-family: "adam-cg-pro";
+      font-weight: 700;
+      font-size: 48px;
+
+      &.basic {
+        color: white;
+      }
+
+      &.attention {
+        color: $BAT_Orange;
+      }
+
+      &.token {
+        color: white;
+      }
+
+      &.atm {
+        color: $BAT_Pink;
+        margin-left: 25px;
+        font-size: 75px;
+      }
+
+    }
+  }
+
+  .batatm-address-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "adam-cg-pro";
+    font-size: 24px;
+    color: white;
+
+    .address {
+      margin-left: 10px;
+      margin-right: 10px;
+      color: white;
+      background-color: $BAT_Orange;
+      padding: 10px;
+    }
+
+  }
+
+  .main-content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .batatm-container {
+    height: 350px;
+    position: relative;
+  }
+
+  img.batatm {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .batatm-shadow {
+    background-color: black;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 3.35rem;
+    left: 1.75rem;
+    z-index: 1;
+  }
+
+  .batatm-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .stat-header {
+      font-family: "adam-cg-pro";
+      font-size: 24px;
+      font-weight: 700;
+      color: white;
+      background-color: $BAT_Purple;
+      padding: 10px;
+    }
+
+    .stat-data {
+      margin-top: 18px;
+      font-family: "adam-cg-pro";
+      font-size: 32px;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+}
+
+.view-on-etherscan {
+  display: flex;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: $BAT_Orange;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// Imports
+@import "fonts";
